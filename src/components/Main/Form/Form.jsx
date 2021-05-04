@@ -18,7 +18,7 @@ import {
 } from "../../../constants/categories";
 import { formatDate } from "../../../utils/formatDate";
 const initialState = {
-    ammount: "",
+    amount: "",
     category: "",
     type: "Income",
     date: formatDate(new Date()),
@@ -34,7 +34,7 @@ const Form = () => {
     const createTransaction = () => {
         const transaction = {
             ...formData,
-            ammount: Number(formData.ammount),
+            amount: Number(formData.amount),
             id: uuidv4(),
         };
 
@@ -88,11 +88,11 @@ const Form = () => {
             </Grid>
             <Grid item xs={6}>
                 <TextField
-                    value={formData.ammount}
+                    value={formData.amount}
                     onChange={e =>
                         setFormData({
                             ...formData,
-                            ammount: e.target.value,
+                            amount: e.target.value,
                         })
                     }
                     type="number"

@@ -44,7 +44,7 @@ const List = () => {
                         </ListItemAvatar>
                         <ListItemText
                             primary={transaction.category}
-                            secondary={`$${transaction.ammount} - ${transaction.date}`}
+                            secondary={`$${transaction.amount} - ${transaction.date}`}
                         />
                         <ListItemSecondaryAction>
                             <IconButton
